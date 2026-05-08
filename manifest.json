@@ -1,0 +1,21 @@
+{
+  "name": "NightStrike",
+  "short_name": "NightStrike",
+  "description": "NightStrike on Hello Texas Records",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#090909",
+  "theme_color": "#d7a241",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/SteveP999/nightstrike/main/images/nightstrike-logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/SteveP999/nightstrike/main/images/nightstrike-logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
