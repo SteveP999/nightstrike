@@ -1,1 +1,162 @@
-﻿<h1 style="color:white;background:black;padding:40px;">NIGHTSTRIKE TEST PAGE WORKING</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NightStrike | Hello Texas Records</title>
+<style>
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#050505;
+  color:white;
+}
+.hero{
+  min-height:100vh;
+  background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.85)),
+    url('https://raw.githubusercontent.com/SteveP999/NightStrike/main/images/nightstrike-band-photo.png') center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:40px;
+}
+.hero-inner{
+  max-width:900px;
+}
+.logo{
+  width:min(700px,90vw);
+  margin-bottom:20px;
+}
+h1{
+  font-size:72px;
+  margin:0;
+  letter-spacing:4px;
+}
+.sub{
+  color:#d0d0d0;
+  margin-top:10px;
+  font-size:20px;
+}
+.section{
+  padding:60px 30px;
+  max-width:1200px;
+  margin:auto;
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+.card{
+  background:#111;
+  border:1px solid #333;
+}
+.card img{
+  width:100%;
+  display:block;
+}
+.info{
+  padding:20px;
+}
+.title{
+  font-size:32px;
+  margin-bottom:10px;
+}
+.album{
+  color:#aaa;
+  margin-bottom:15px;
+}
+button{
+  background:#d6a12a;
+  border:none;
+  color:black;
+  padding:12px 18px;
+  font-weight:bold;
+  cursor:pointer;
+}
+.player{
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  background:#090909;
+  border-top:1px solid #333;
+  display:flex;
+  align-items:center;
+  gap:15px;
+  padding:10px 20px;
+}
+.player img{
+  width:60px;
+  height:60px;
+  object-fit:cover;
+}
+audio{
+  width:100%;
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-inner">
+    <img class="logo" src="https://raw.githubusercontent.com/SteveP999/NightStrike/main/images/nightstrike-logo.png">
+    <h1>NightStrike</h1>
+    <div class="sub">Hard Rock / Sleaze Rock</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>High Voltage</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://raw.githubusercontent.com/SteveP999/NightStrike/main/covers/nightstrike-high-voltage-ALBUM-cover.png">
+      <div class="info">
+        <div class="title">High Voltage</div>
+        <div class="album">Album</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://raw.githubusercontent.com/SteveP999/NightStrike/main/covers/nightstrike-crash-and-burn-cover.png">
+      <div class="info">
+        <div class="title">Crash and Burn</div>
+        <div class="album">High Voltage</div>
+        <button onclick="playSong('https://www.dropbox.com/scl/fi/pdk6fd86ja75lrfd862i9/nightstrike-crash-and-burn-mp3.mp3?rlkey=65gjedmk6v53dxnyhfwyjwc83&raw=1','Crash and Burn','https://raw.githubusercontent.com/SteveP999/NightStrike/main/covers/nightstrike-crash-and-burn-cover.png')">PLAY</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://raw.githubusercontent.com/SteveP999/NightStrike/main/covers/nightstrike-the-storm-never-sleeps-cover.png">
+      <div class="info">
+        <div class="title">The Storm Never Sleeps</div>
+        <div class="album">High Voltage</div>
+        <button onclick="playSong('https://www.dropbox.com/scl/fi/xzj3myi8pt4ulsd2dvfrl/nightstrike-the-storm-never-sleeps-mp3.mp3?rlkey=e4vl08mxg5mb2m3m2yt4zvq3c&raw=1','The Storm Never Sleeps','https://raw.githubusercontent.com/SteveP999/NightStrike/main/covers/nightstrike-the-storm-never-sleeps-cover.png')">PLAY</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="player">
+  <img id="cover" src="https://raw.githubusercontent.com/SteveP999/NightStrike/main/images/nightstrike-logo.png">
+  <div id="title">Select a Track</div>
+  <audio id="audio" controls></audio>
+</div>
+
+<script>
+function playSong(src,title,cover){
+  const audio=document.getElementById('audio');
+  document.getElementById('title').innerText=title;
+  document.getElementById('cover').src=cover;
+  audio.src=src;
+  audio.play();
+}
+</script>
+
+</body>
+</html>
