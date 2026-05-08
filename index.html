@@ -2,368 +2,422 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4PCFSEQJZ1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-4PCFSEQJZ1');
-</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Parsons Cross — Contemporary Christian Worship</title>
+<title>NightStrike | Hello Texas Records</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-:root {
-  --black:#080709; --ink:#111013; --deep:#0d0c10;
-  --gold:#C8A84B; --gold-lt:#E2C97A; --gold-glow:rgba(200,168,75,0.18);
-  --cream:#F0E8D8; --mist:#9B93A8; --white:#F5F2EC;
-  --accent:#C8A84B; --accent-lt:#E2C97A; --accent-glow:rgba(200,168,75,0.25);
-  --bg-primary:#080709; --bg-section:#111013; --bg-alt:#0d0c10;
+:root{
+  --bg:#060606;
+  --panel:#121212;
+  --gold:#d99b2b;
+  --text:#f5f5f5;
+  --muted:#b5b5b5;
 }
-html{scroll-behavior:smooth;}
-body{background:var(--bg-primary);color:var(--cream);font-family:'Montserrat',sans-serif;font-weight:300;font-size:15px;line-height:1.7;overflow-x:hidden;}
-#topnav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem;height:64px;background:transparent;border-bottom:1px solid transparent;transition:background 0.4s,border-color 0.4s;}
-#topnav.scrolled{background:rgba(8,7,9,0.95);border-color:var(--gold-glow);backdrop-filter:blur(12px);}
-.nav-logo{height:36px;width:auto;mix-blend-mode:screen;}
-.nav-links{display:flex;gap:2.2rem;list-style:none;}
-.nav-links a{color:var(--mist);text-decoration:none;font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;transition:color 0.25s;}
-.nav-links a:hover{color:var(--gold-lt);}
-.hero{position:relative;height:100vh;min-height:620px;display:flex;align-items:flex-end;overflow:hidden;}
-.hero-bg{position:absolute;inset:0;background-size:cover;background-position:center top;background-repeat:no-repeat;}
-.hero-vignette{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(8,7,9,0.35) 0%,rgba(8,7,9,0) 40%,rgba(8,7,9,0) 55%,rgba(8,7,9,0.95) 100%),linear-gradient(to right,rgba(8,7,9,0.5) 0%,transparent 55%);}
-.hero-content{position:relative;z-index:2;padding:0 3.5rem 4.5rem;max-width:640px;}
-.hero-label{font-size:0.65rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem;}
-.hero-logo-wrap{margin-bottom:1.5rem;}
-.hero-logo-wrap img{height:62px;width:auto;mix-blend-mode:screen;}
-.hero-tagline{font-family:'Cormorant Garamond',serif;font-size:clamp(1.1rem,2vw,1.35rem);font-style:italic;color:var(--cream);opacity:0.85;margin-bottom:2rem;line-height:1.6;}
-.hero-ctas{display:flex;gap:1rem;flex-wrap:wrap;}
-.cta-primary{background:var(--accent);color:var(--black);border:none;padding:0.75rem 1.8rem;font-family:'Montserrat',sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;cursor:pointer;transition:background 0.2s,transform 0.15s;}
-.cta-primary:hover{background:var(--accent-lt);transform:translateY(-1px);}
-.cta-secondary{background:transparent;color:var(--cream);border:1px solid rgba(200,168,75,0.4);padding:0.75rem 1.8rem;font-family:'Montserrat',sans-serif;font-size:0.7rem;font-weight:400;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;display:inline-block;transition:border-color 0.2s,color 0.2s;}
-.cta-secondary:hover{border-color:var(--accent);color:var(--accent-lt);}
-.section-header{text-align:center;padding:4.5rem 2rem 3rem;}
-.section-eyebrow{font-size:0.62rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--accent);margin-bottom:0.75rem;}
-.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,2.8rem);font-weight:300;color:var(--white);letter-spacing:0.04em;}
-.gold-rule{width:48px;height:1px;background:var(--accent);margin:1.2rem auto 0;opacity:0.7;}
-#bio{background:var(--bg-alt);padding-bottom:5rem;}
-.bio-inner{max-width:680px;margin:0 auto;padding:0 2rem;text-align:center;}
-.bio-inner p{color:var(--mist);line-height:1.9;font-size:0.95rem;margin-bottom:1.2rem;}
-#latest-single{background:var(--bg-section);padding:5rem 0;border-top:1px solid var(--gold-glow);}
-.latest-inner{max-width:1060px;margin:0 auto;padding:0 2.5rem;display:grid;grid-template-columns:380px 1fr;gap:4rem;align-items:center;}
-.latest-cover{width:100%;aspect-ratio:1;object-fit:cover;display:block;box-shadow:0 0 60px var(--accent-glow),0 24px 64px rgba(0,0,0,0.8);}
-.latest-badge{display:inline-block;font-size:0.58rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--accent);border:1px solid rgba(200,168,75,0.4);padding:0.25rem 0.85rem;margin-bottom:1.2rem;}
-.latest-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:300;color:var(--white);line-height:1.1;margin-bottom:0.4rem;}
-.latest-sub{font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--mist);margin-bottom:2rem;}
-.latest-play-btn{display:inline-flex;align-items:center;gap:0.75rem;background:transparent;color:var(--accent);border:1px solid rgba(200,168,75,0.45);cursor:pointer;padding:0.85rem 2rem;font-family:'Montserrat',sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;transition:border-color 0.2s,background 0.2s;}
-.latest-play-btn:hover{background:var(--accent-glow);}
-</style>
-<style>
-#video-section{background:var(--bg-alt);padding:5rem 0;border-top:1px solid var(--gold-glow);}
-.video-wrap{max-width:840px;margin:0 auto;padding:0 2rem;}
-.video-thumb-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;box-shadow:0 0 40px var(--accent-glow),0 24px 64px rgba(0,0,0,0.6);cursor:pointer;}
-.video-thumb-wrap img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;}
-.video-play-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.3);}
-.video-play-circle{width:72px;height:72px;background:rgba(200,168,75,0.9);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.6rem;padding-left:6px;color:var(--black);}
-.video-link-row{text-align:center;margin-top:1.5rem;}
-.video-link-row a{font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;text-decoration:none;color:var(--accent);border:1px solid rgba(200,168,75,0.4);padding:0.4rem 1.2rem;}
-.album-section{padding:5rem 0;border-top:1px solid var(--gold-glow);}
-.album-section:nth-child(odd){background:var(--bg-section);}
-.album-section:nth-child(even){background:var(--bg-alt);}
-.album-layout{max-width:1080px;margin:0 auto;padding:0 2.5rem;display:grid;grid-template-columns:340px 1fr;gap:4rem;align-items:start;}
-.album-layout.reverse{direction:rtl;}
-.album-layout.reverse>*{direction:ltr;}
-.album-cover{width:100%;aspect-ratio:1;object-fit:cover;display:block;box-shadow:0 20px 60px rgba(0,0,0,0.7),0 0 0 1px var(--gold-glow);}
-.album-meta{padding-top:0.5rem;}
-.album-badge{display:inline-block;font-size:0.58rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--accent);border:1px solid rgba(200,168,75,0.4);padding:0.25rem 0.75rem;margin-bottom:1.2rem;}
-.wip-badge{display:inline-block;font-size:0.58rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--mist);border:1px solid rgba(155,147,168,0.35);padding:0.25rem 0.75rem;margin-bottom:1.2rem;}
-.album-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.4rem);font-weight:300;color:var(--white);line-height:1.2;margin-bottom:0.4rem;}
-.album-artist{font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--mist);margin-bottom:1.2rem;}
-.album-desc{color:var(--mist);font-size:0.9rem;line-height:1.8;margin-bottom:2rem;max-width:480px;}
-.stream-row{display:flex;gap:0.8rem;flex-wrap:wrap;margin-bottom:2.2rem;}
-.stream-btn{font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--cream);text-decoration:none;border:1px solid var(--gold-glow);padding:0.45rem 1.1rem;transition:border-color 0.2s,color 0.2s;}
-.stream-btn:hover{border-color:var(--accent);color:var(--accent-lt);}
-.tracklist{border-top:1px solid var(--gold-glow);}
-.track-row{display:grid;grid-template-columns:2rem 1fr auto auto;align-items:center;gap:0.75rem;padding:0.75rem 0;border-bottom:1px solid rgba(200,168,75,0.06);transition:background 0.2s;}
-.track-row:hover{background:rgba(200,168,75,0.04);}
-.track-num{font-size:0.65rem;color:var(--mist);opacity:0.5;text-align:right;font-family:'Cormorant Garamond',serif;}
-.track-title{font-size:0.88rem;color:var(--cream);}
-.track-badge{font-size:0.55rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.2rem 0.6rem;}
-.badge-hit{color:var(--accent);border:1px solid rgba(200,168,75,0.45);}
-.badge-new{color:#7DC4A8;border:1px solid rgba(125,196,168,0.4);}
-.track-play-btn{background:transparent;border:1px solid rgba(200,168,75,0.3);color:var(--accent);width:28px;height:28px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:0.65rem;flex-shrink:0;transition:background 0.2s,border-color 0.2s;}
-.track-play-btn:hover{background:var(--gold-glow);border-color:var(--accent);}
-.track-play-btn.playing{background:rgba(200,168,75,0.2);border-color:var(--accent-lt);}
-#singles{background:#0A0E1A;padding:5rem 0;border-top:1px solid var(--gold-glow);}
-.singles-grid{max-width:1080px;margin:0 auto;padding:0 2.5rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1.5rem;}
-.single-card{position:relative;cursor:pointer;}
-.single-img-wrap{position:relative;overflow:hidden;aspect-ratio:1;}
-.single-img-wrap img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s,filter 0.4s;filter:brightness(0.82);}
-.single-card:hover .single-img-wrap img{transform:scale(1.04);filter:brightness(1);}
-.single-play-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(8,7,9,0);transition:background 0.3s;}
-.single-card:hover .single-play-overlay{background:rgba(8,7,9,0.35);}
-.single-play-btn{width:52px;height:52px;border:2px solid var(--accent);background:rgba(8,7,9,0.6);color:var(--accent);font-size:1rem;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;transform:scale(0.85);transition:opacity 0.25s,transform 0.25s;}
-.single-card:hover .single-play-btn,.single-play-btn.playing{opacity:1;transform:scale(1);}
-.single-info{padding:0.85rem 0 0;}
-.single-title{font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:var(--white);margin-bottom:0.2rem;}
-.single-sub{font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--mist);opacity:0.7;}
-.single-streams{display:flex;gap:0.3rem;margin-top:0.5rem;flex-wrap:wrap;}
-.ss-btn{font-size:0.47rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.17rem 0.48rem;border-radius:2px;text-decoration:none;font-weight:700;transition:opacity 0.2s;display:inline-block;line-height:1.6;}
-.ss-btn:hover{opacity:0.75;}
-.ss-spotify{background:#1DB954;color:#000;}
-.ss-apple{background:#fc3c44;color:#fff;}
-.ss-ytm{background:#FF0000;color:#fff;}
-.ss-video{background:#333;color:#fff;}
-#player{display:none;position:fixed;bottom:0;left:0;right:0;z-index:200;background:rgba(8,7,9,0.97);border-top:1px solid rgba(200,168,75,0.25);backdrop-filter:blur(16px);grid-template-columns:auto 1fr auto;align-items:center;gap:1.5rem;padding:0.8rem 2rem;transform:translateY(100%);transition:transform 0.35s cubic-bezier(0.4,0,0.2,1);}
-#player.visible{transform:translateY(0);}
-.p-track-info{display:flex;align-items:center;gap:1rem;min-width:0;}
-.p-thumb{width:42px;height:42px;object-fit:cover;flex-shrink:0;border:1px solid var(--gold-glow);}
-.p-title{font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--white);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-.p-album{font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--mist);opacity:0.6;}
-.p-controls{display:flex;align-items:center;flex-direction:column;flex:1;gap:0.5rem;min-width:0;}
-.p-btn-row{display:flex;align-items:center;gap:1.2rem;}
-.p-btn{background:transparent;border:none;color:var(--mist);cursor:pointer;font-size:0.9rem;padding:0.25rem;transition:color 0.2s;}
-.p-btn:hover{color:var(--accent-lt);}
-#p-playbtn{width:38px;height:38px;border:1px solid rgba(200,168,75,0.5);background:transparent;color:var(--accent);cursor:pointer;font-size:0.85rem;display:flex;align-items:center;justify-content:center;transition:background 0.2s;}
-#p-playbtn:hover{background:var(--gold-glow);}
-.p-progress{display:flex;align-items:center;gap:0.75rem;width:100%;}
-.p-time{font-size:0.62rem;color:var(--mist);opacity:0.6;white-space:nowrap;}
-#p-bar{flex:1;height:3px;background:rgba(200,168,75,0.18);cursor:pointer;position:relative;}
-#p-fill{height:100%;width:0%;background:linear-gradient(to right,var(--accent),var(--accent-lt));pointer-events:none;}
-.p-right{display:flex;align-items:center;gap:1rem;}
-#p-vol{width:72px;accent-color:var(--accent);}
-#p-close{background:transparent;border:none;color:var(--mist);cursor:pointer;font-size:1rem;opacity:0.5;transition:opacity 0.2s;}
-#p-close:hover{opacity:1;}
-footer{background:var(--black);border-top:1px solid var(--gold-glow);padding:4rem 2rem 3rem;text-align:center;}
-.foot-logo{height:48px;width:auto;mix-blend-mode:screen;margin-bottom:1.2rem;}
-.foot-label{font-size:0.6rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--mist);opacity:0.5;margin-bottom:1.5rem;}
-.foot-links{display:flex;gap:2rem;justify-content:center;flex-wrap:wrap;}
-.foot-links a{font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--mist);text-decoration:none;opacity:0.5;transition:opacity 0.2s,color 0.2s;}
-.foot-links a:hover{opacity:1;color:var(--accent-lt);}
-#lyric-modal{display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.92);align-items:center;justify-content:center;}
-#lyric-modal.open{display:flex;}
-#lyric-modal-inner{position:relative;width:90vw;max-width:900px;}
-.modal-video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;}
-.modal-video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;}
-#lyric-modal-close{position:absolute;top:-2.5rem;right:0;background:none;border:none;color:var(--accent);font-size:1.8rem;cursor:pointer;}
-.loading-placeholder{text-align:center;padding:3rem;color:var(--mist);font-size:0.8rem;letter-spacing:0.2em;text-transform:uppercase;}
-@media(max-width:768px){
-  .album-layout,.album-layout.reverse{grid-template-columns:1fr;direction:ltr;gap:2rem;}
-  .album-cover{max-width:320px;margin:0 auto;}
-  .latest-inner{grid-template-columns:1fr!important;gap:2rem;}
-  .latest-cover{max-width:280px;margin:0 auto;}
-  .hero-content{padding:0 1.8rem 3.5rem;}
-  .singles-grid{grid-template-columns:repeat(2,1fr);gap:1rem;}
-  #player{grid-template-columns:1fr;gap:0.5rem;}
-  .p-track-info{display:none;}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:'Barlow',sans-serif;
+  padding-bottom:90px;
+}
+
+nav{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:1000;
+  background:rgba(0,0,0,.92);
+  border-bottom:1px solid rgba(255,255,255,.08);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:16px 28px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  font-size:14px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:120px 30px 80px;
+  background:
+    linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.82)),
+    url('https://raw.githubusercontent.com/SteveP999/NightStrike/main/images/nightstrike-band-photo.png') center/cover no-repeat;
+}
+
+.hero-inner{
+  max-width:900px;
+}
+
+.logo{
+  width:min(760px,92vw);
+  margin-bottom:30px;
+}
+
+.tag{
+  color:var(--muted);
+  font-size:20px;
+  margin-top:12px;
+}
+
+.hero-buttons{
+  margin-top:35px;
+  display:flex;
+  gap:18px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.button{
+  background:var(--gold);
+  color:black;
+  padding:14px 22px;
+  text-decoration:none;
+  font-weight:700;
+  letter-spacing:1px;
+}
+
+.button.secondary{
+  background:transparent;
+  color:white;
+  border:1px solid rgba(255,255,255,.2);
+}
+
+.section{
+  max-width:1200px;
+  margin:auto;
+  padding:70px 30px;
+}
+
+.section-title{
+  font-size:42px;
+  margin-bottom:28px;
+  font-family:'Bebas Neue',sans-serif;
+  letter-spacing:3px;
+}
+
+.description{
+  background:var(--panel);
+  padding:30px;
+  line-height:1.8;
+  border:1px solid rgba(255,255,255,.08);
+}
+
+.feature-card{
+  display:grid;
+  grid-template-columns:320px 1fr;
+  gap:30px;
+  background:var(--panel);
+  border:1px solid rgba(255,255,255,.08);
+  overflow:hidden;
+}
+
+.feature-card img{
+  width:100%;
+  display:block;
+}
+
+.feature-info{
+  padding:30px;
+}
+
+.feature-info h3{
+  font-size:52px;
+  margin-bottom:10px;
+  font-family:'Bebas Neue',sans-serif;
+  letter-spacing:2px;
+}
+
+.feature-info p{
+  color:var(--muted);
+  margin-bottom:20px;
+}
+
+.album-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:24px;
+}
+
+.album-card{
+  background:var(--panel);
+  border:1px solid rgba(255,255,255,.08);
+}
+
+.album-card img{
+  width:100%;
+  display:block;
+}
+
+.album-info{
+  padding:20px;
+}
+
+.album-title{
+  font-size:32px;
+  margin-bottom:8px;
+  font-family:'Bebas Neue',sans-serif;
+}
+
+.track{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 0;
+  border-top:1px solid rgba(255,255,255,.08);
+}
+
+.track button{
+  background:var(--gold);
+  border:none;
+  padding:10px 14px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.video-frame{
+  aspect-ratio:16/9;
+  width:100%;
+}
+
+.photos{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+
+.photos img{
+  width:100%;
+  display:block;
+}
+
+.player{
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:2000;
+  background:#090909;
+  border-top:1px solid rgba(255,255,255,.08);
+  display:flex;
+  align-items:center;
+  gap:18px;
+  padding:14px 20px;
+}
+
+.player img{
+  width:58px;
+  height:58px;
+  object-fit:cover;
+}
+
+.player-info{
+  min-width:200px;
+}
+
+.player-title{
+  font-weight:700;
+}
+
+.player-sub{
+  color:var(--muted);
+  font-size:13px;
+}
+
+audio{
+  width:100%;
+}
+
+footer{
+  text-align:center;
+  padding:40px;
+  color:var(--muted);
+}
+
+@media(max-width:900px){
+  .feature-card{
+    grid-template-columns:1fr;
+  }
+
+  .feature-info h3{
+    font-size:38px;
+  }
+
+  .player{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  audio{
+    width:100%;
+  }
 }
 </style>
 </head>
 <body>
-<nav id="topnav">
-  <a href="#"><img src="https://raw.githubusercontent.com/SteveP999/Parsons-Cross/main/PARSONS%20CROSS%20LOGO.png" alt="Parsons Cross" class="nav-logo"></a>
-  <ul class="nav-links">
-    <li><a href="#bio">About</a></li>
-    <li><a href="#albums">Music</a></li>
-    <li><a href="#singles">Singles</a></li>
-    <li><a href="https://stevep999.github.io/hello-texas-records/" target="_blank" style="opacity:0.45;font-size:0.62rem;">Hello Texas Records</a></li>
-  </ul>
+
+<nav>
+  <a href="https://stevep999.github.io/hello-texas-records/">Hello Texas Records</a>
+
+  <div style="display:flex;gap:20px;">
+    <a href="#music">Music</a>
+    <a href="#video">Video</a>
+    <a href="#photos">Photos</a>
+  </div>
 </nav>
 
 <section class="hero">
-  <div class="hero-bg" style="background-image:url('https://raw.githubusercontent.com/SteveP999/Parsons-Cross/main/covers/parsons-cross-out-of-the-darkness-ALBUM-cover.png');"></div>
-  <div class="hero-vignette"></div>
-  <div class="hero-content">
-    <div class="hero-label">Hello Texas Records</div>
-    <div class="hero-logo-wrap"><img src="https://raw.githubusercontent.com/SteveP999/Parsons-Cross/main/PARSONS%20CROSS%20LOGO.png" alt="Parsons Cross"></div>
-    <p class="hero-tagline">Songs written in the dark places,<br>because that's where faith does its deepest work.</p>
-    <div class="hero-ctas">
-      <button class="cta-primary" id="hero-play-btn">&#9654;&nbsp; Play Latest Single</button>
-      <a href="#albums" class="cta-secondary">Discography</a>
+  <div class="hero-inner">
+    <img class="logo" src="https://raw.githubusercontent.com/SteveP999/NightStrike/main/images/nightstrike-logo.png">
+
+    <div class="tag">
+      Sleaze rock. Big hooks. Midnight danger.
+    </div>
+
+    <div class="hero-buttons">
+      <a class="button" href="#latest-single">Latest Single</a>
+      <a class="button secondary" href="#music">Discography</a>
     </div>
   </div>
 </section>
 
-<section id="bio">
-  <div class="section-header">
-    <div class="section-eyebrow">About</div>
-    <h2 class="section-title">Parsons Cross</h2>
-    <div class="gold-rule"></div>
-  </div>
-  <div class="bio-inner">
-    <p>Parsons Cross is a Contemporary Christian worship band rooted in honest faith — the kind that doesn't flinch from doubt, grief, or the long stretches where the answers don't come easy.</p>
-    <p>Their music starts in the valley and points toward the light. Not because the hard parts get edited out, but because they've found that the hard parts are exactly where grace tends to show up.</p>
-    <p>Released through Hello Texas Records, their debut album <em>Out of the Darkness</em> walks through five songs of struggle, surrender, and hard-won hope. The follow-up, <em>Into the Light</em>, continues the journey — still honest, now hopeful.</p>
+<section class="section">
+  <div class="section-title">About NightStrike</div>
+
+  <div class="description">
+    NightStrike brings late-80s sleaze rock back to life with arena-sized hooks, screaming guitars, neon-soaked attitude, and the kind of choruses built for windows-down midnight drives.
   </div>
 </section>
 
-<section id="latest-single">
-  <div class="section-header">
-    <div class="section-eyebrow">Latest Single</div>
-    <h2 class="section-title" id="latest-section-title">Loading…</h2>
-    <div class="gold-rule"></div>
-  </div>
-  <div class="latest-inner">
-    <div><img id="latest-cover" src="" alt="" class="latest-cover"></div>
-    <div>
-      <div class="latest-badge">Latest Single</div>
-      <h2 class="latest-title" id="latest-title">—</h2>
-      <div class="latest-sub" id="latest-sub">Parsons Cross</div>
-      <button class="latest-play-btn" id="latest-play-btn">&#9654;&nbsp; Play Now</button>
+<section class="section" id="latest-single">
+  <div class="section-title">Latest Single</div>
+
+  <div class="feature-card">
+    <img src="https://raw.githubusercontent.com/SteveP999/NightStrike/main/covers/nightstrike-crash-and-burn-cover.png">
+
+    <div class="feature-info">
+      <h3>Crash and Burn</h3>
+
+      <p>
+        From the upcoming album <strong>High Voltage</strong>
+      </p>
+
+      <button class="button" onclick="playSong(
+'https://www.dropbox.com/scl/fi/pdk6fd86ja75lrfd862i9/nightstrike-crash-and-burn-mp3.mp3?rlkey=65gjedmk6v53dxnyhfwyjwc83&raw=1',
+'Crash and Burn',
+'https://raw.githubusercontent.com/SteveP999/NightStrike/main/covers/nightstrike-crash-and-burn-cover.png'
+)">Play Now</button>
     </div>
   </div>
 </section>
 
-<section id="video-section">
-  <div class="section-header">
-    <div class="section-eyebrow">Official Lyric Video</div>
-    <h2 class="section-title">Touching Heaven</h2>
-    <div class="gold-rule"></div>
-  </div>
-  <div class="video-wrap">
-    <div class="video-thumb-wrap" onclick="openLyricModal('https://www.youtube.com/embed/PosylKbcMks?autoplay=1&mute=1&rel=0')">
-      <img src="https://img.youtube.com/vi/PosylKbcMks/maxresdefault.jpg" alt="Touching Heaven Lyric Video">
-      <div class="video-play-overlay"><div class="video-play-circle">&#9654;</div></div>
+<section class="section" id="video">
+  <div class="section-title">Featured Video</div>
+
+  <iframe class="video-frame"
+    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+    title="NightStrike Video"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+</section>
+
+<section class="section" id="music">
+  <div class="section-title">Latest Album</div>
+
+  <div class="album-grid">
+    <div class="album-card">
+      <img src="https://raw.githubusercontent.com/SteveP999/NightStrike/main/covers/nightstrike-high-voltage-ALBUM-cover.png">
+
+      <div class="album-info">
+        <div class="album-title">High Voltage</div>
+
+        <div class="track">
+          <div>
+            Crash and Burn
+            <div style="font-size:12px;color:#d99b2b;">LATEST SINGLE</div>
+          </div>
+
+          <button onclick="playSong(
+'https://www.dropbox.com/scl/fi/pdk6fd86ja75lrfd862i9/nightstrike-crash-and-burn-mp3.mp3?rlkey=65gjedmk6v53dxnyhfwyjwc83&raw=1',
+'Crash and Burn',
+'https://raw.githubusercontent.com/SteveP999/NightStrike/main/covers/nightstrike-crash-and-burn-cover.png'
+)">PLAY</button>
+        </div>
+
+        <div class="track">
+          <div>The Storm Never Sleeps</div>
+
+          <button onclick="playSong(
+'https://www.dropbox.com/scl/fi/xzj3myi8pt4ulsd2dvfrl/nightstrike-the-storm-never-sleeps-mp3.mp3?rlkey=e4vl08mxg5mb2m3m2yt4zvq3c&raw=1',
+'The Storm Never Sleeps',
+'https://raw.githubusercontent.com/SteveP999/NightStrike/main/covers/nightstrike-the-storm-never-sleeps-cover.png'
+)">PLAY</button>
+        </div>
+
+      </div>
     </div>
-    <div class="video-link-row"><a href="https://youtu.be/PosylKbcMks" target="_blank">Watch on YouTube</a></div>
   </div>
 </section>
 
-<div id="albums"><div class="loading-placeholder" id="albums-loading">Loading music…</div></div>
+<section class="section" id="photos">
+  <div class="section-title">Band Photos</div>
 
-<section id="singles">
-  <div class="section-header">
-    <div class="section-eyebrow">Singles</div>
-    <h2 class="section-title">Featured Tracks</h2>
-    <div class="gold-rule"></div>
+  <div class="photos">
+    <img src="https://raw.githubusercontent.com/SteveP999/NightStrike/main/images/nightstrike-band-photo.png">
   </div>
-  <div class="singles-grid" id="singles-grid"><div class="loading-placeholder">Loading…</div></div>
 </section>
 
 <footer>
-  <img src="https://raw.githubusercontent.com/SteveP999/Parsons-Cross/main/PARSONS%20CROSS%20LOGO.png" alt="Parsons Cross" class="foot-logo">
-  <div class="foot-label">Hello Texas Records</div>
-  <div class="foot-links">
-    <a href="https://open.spotify.com/artist/parsons-cross" target="_blank">Spotify</a>
-    <a href="https://music.apple.com" target="_blank">Apple Music</a>
-    <a href="https://youtube.com" target="_blank">YouTube</a>
-    <a href="https://instagram.com" target="_blank">Instagram</a>
-    <a href="https://stevep999.github.io/hello-texas-records/" target="_blank">Label</a>
-  </div>
+  NightStrike • Hello Texas Records
 </footer>
 
-<audio id="audio" playsinline preload="none"></audio>
-<div id="player">
-  <div class="p-track-info">
-    <img id="p-thumb" src="" alt="" class="p-thumb">
-    <div><div id="p-title" class="p-title">—</div><div id="p-album" class="p-album">Parsons Cross</div></div>
-  </div>
-  <div class="p-controls">
-    <div class="p-btn-row">
-      <button class="p-btn" id="p-prev">&#9664;&#9664;</button>
-      <button id="p-playbtn">&#9654;</button>
-      <button class="p-btn" id="p-next">&#9654;&#9654;</button>
-    </div>
-    <div class="p-progress">
-      <span class="p-time" id="p-cur">0:00</span>
-      <div id="p-bar"><div id="p-fill"></div></div>
-      <span class="p-time" id="p-dur">0:00</span>
-    </div>
-  </div>
-  <div class="p-right">
-    <input type="range" id="p-vol" min="0" max="1" step="0.02" value="0.85">
-    <button id="p-close">&#x2715;</button>
-  </div>
-</div>
+<div class="player">
+  <img id="playerCover"
+    src="https://raw.githubusercontent.com/SteveP999/NightStrike/main/images/nightstrike-logo.png">
 
-<div id="lyric-modal" onclick="if(event.target===this)closeLyricModal()">
-  <div id="lyric-modal-inner">
-    <button id="lyric-modal-close" onclick="closeLyricModal()">&times;</button>
-    <div class="modal-video-wrap"><iframe id="lyric-modal-iframe" src="" allow="autoplay;encrypted-media" allowfullscreen></iframe></div>
+  <div class="player-info">
+    <div class="player-title" id="playerTitle">Select a Track</div>
+    <div class="player-sub">NightStrike</div>
   </div>
+
+  <audio id="audio" controls></audio>
 </div>
 
 <script>
-const ARTIST='Parsons Cross',REPO='Parsons-Cross';
-const BASE=`https://raw.githubusercontent.com/SteveP999/${REPO}/main`;
-const SONGS_URL=`${BASE}/songs.json`,LATEST_URL=`${BASE}/latest.json`;
-const STREAMING={
-  dark_nights_of_the_soul:{spotify:'https://open.spotify.com/track/4xPhdxLaFDgZ8WRgmwT83a',apple:'https://music.apple.com/us/album/dark-nights-of-the-soul-radio-edit-single/1879509351',ytm:'https://music.youtube.com/watch?v=o9zKgY9Sc7Y'},
-  keep_the_son_in_your_eyes:{spotify:'https://open.spotify.com/track/2RvI1BQlpJNfMGJac5t7OP',apple:'https://music.apple.com/us/song/keep-the-son-in-your-eyes/1879451458',ytm:'https://music.youtube.com/watch?v=VIDT67rd5Gs'},
-  touching_heaven:{spotify:'https://open.spotify.com/track/2EWQsy0t7ubtC0qOjVmoUq',apple:'https://music.apple.com/us/album/touching-heaven-single/1879442524',ytm:'https://music.youtube.com/watch?v=zJwtCY7bN5E',video:'https://youtu.be/PosylKbcMks'},
-  thick_and_thin:{spotify:'https://open.spotify.com/album/471uwS8eSu1Y8TC5I8ifp5',apple:'https://music.apple.com/us/album/thick-thin-single/1889830890',ytm:'https://music.youtube.com/watch?v=BBccjAaSpMw'},
-  the_waiting_room:{spotify:'https://open.spotify.com/track/4LMmbqbsAfWbByPMhukOWd',apple:'https://music.apple.com/us/album/the-waiting-room-single/1879902329',ytm:'https://music.youtube.com/watch?v=aQtH__C7K00'},
-};
-let SONGS=[],ORDER=[],cur=null;
-const audio=document.getElementById('audio'),player=document.getElementById('player'),pThumb=document.getElementById('p-thumb');
-function fmt(s){if(!isFinite(s)||isNaN(s))return'0:00';const m=Math.floor(s/60),sec=Math.floor(s%60);return m+':'+(sec<10?'0':'')+sec;}
-function getSong(id){return SONGS.find(s=>s.id===id);}
-function setAllBtns(id,playing){
-  document.querySelectorAll('[data-play-id]').forEach(btn=>{
-    btn.innerHTML=(playing&&btn.dataset.playId===id)?'&#9646;&#9646;':'&#9654;';
-    btn.classList.toggle('playing',playing&&btn.dataset.playId===id);
-  });
-  document.getElementById('p-playbtn').innerHTML=playing?'&#9646;&#9646;':'&#9654;';
+function playSong(src,title,cover){
+  const audio=document.getElementById('audio');
+
+  document.getElementById('playerTitle').innerText=title;
+  document.getElementById('playerCover').src=cover;
+
+  audio.src=src;
+  audio.play();
 }
-function playById(id){
-  const song=getSong(id);if(!song||!song.audio)return;
-  if(cur===id){if(audio.paused){audio.play().catch(()=>{});setAllBtns(id,true);}else{audio.pause();setAllBtns(id,false);}return;}
-  cur=id;
-  gtag('event','song_play',{artist:ARTIST,song_title:song.title,album:song.album,player_type:'artist_site'});
-  audio.removeAttribute('crossorigin');audio.src=song.audio;
-  document.getElementById('p-title').textContent=song.title;
-  document.getElementById('p-album').textContent=song.album||ARTIST;
-  if(song.cover)pThumb.src=song.cover;
-  player.style.display='grid';setTimeout(()=>player.classList.add('visible'),10);
-  setAllBtns(id,true);audio.load();
-  const pp=audio.play();if(pp)pp.catch(()=>{audio.addEventListener('canplaythrough',function h(){audio.removeEventListener('canplaythrough',h);audio.play().catch(()=>{});});});
-}
-audio.addEventListener('ended',()=>{if(!cur||!ORDER.length)return;const idx=ORDER.indexOf(cur);playById(ORDER[(idx+1)%ORDER.length]);});
-audio.addEventListener('timeupdate',()=>{const pct=audio.duration?(audio.currentTime/audio.duration)*100:0;document.getElementById('p-fill').style.width=pct+'%';document.getElementById('p-cur').textContent=fmt(audio.currentTime);document.getElementById('p-dur').textContent=fmt(audio.duration);});
-document.getElementById('p-playbtn').addEventListener('click',()=>{if(!cur)return;if(audio.paused){audio.play().catch(()=>{});setAllBtns(cur,true);}else{audio.pause();setAllBtns(cur,false);}});
-document.getElementById('p-prev').addEventListener('click',()=>{if(!cur||!ORDER.length)return;if(audio.currentTime>3){audio.currentTime=0;return;}const idx=ORDER.indexOf(cur);playById(ORDER[(idx-1+ORDER.length)%ORDER.length]);});
-document.getElementById('p-next').addEventListener('click',()=>{if(!cur||!ORDER.length)return;const idx=ORDER.indexOf(cur);playById(ORDER[(idx+1)%ORDER.length]);});
-document.getElementById('p-bar').addEventListener('click',e=>{if(!audio.duration)return;const r=e.currentTarget.getBoundingClientRect();audio.currentTime=((e.clientX-r.left)/r.width)*audio.duration;});
-document.getElementById('p-vol').addEventListener('input',e=>{audio.volume=+e.target.value;});
-document.getElementById('p-close').addEventListener('click',()=>{audio.pause();player.classList.remove('visible');setTimeout(()=>{player.style.display='none';},350);setAllBtns(cur,false);cur=null;});
-function makeStreamBtns(id){const s=STREAMING[id];if(!s)return'';let h='<div class="single-streams">';if(s.spotify)h+=`<a href="${s.spotify}" target="_blank" onclick="event.stopPropagation()" class="ss-btn ss-spotify">Spotify</a>`;if(s.apple)h+=`<a href="${s.apple}" target="_blank" onclick="event.stopPropagation()" class="ss-btn ss-apple">Apple</a>`;if(s.ytm)h+=`<a href="${s.ytm}" target="_blank" onclick="event.stopPropagation()" class="ss-btn ss-ytm">YT Music</a>`;if(s.video)h+=`<a href="${s.video}" target="_blank" onclick="event.stopPropagation()" class="ss-btn ss-video">Video</a>`;return h+'</div>';}
-function buildAlbums(songs){
-  const map=new Map();songs.forEach(s=>{if(!map.has(s.album))map.set(s.album,[]);map.get(s.album).push(s);});
-  const container=document.getElementById('albums');container.innerHTML='';
-  let i=0;map.forEach((tracks,name)=>{
-    const cover=tracks[0].albumCover||tracks[0].cover;const isReverse=i%2===1;
-    const str=STREAMING[tracks[0].id]||{};
-    const sec=document.createElement('section');sec.className='album-section';
-    sec.innerHTML=`<div class="album-layout${isReverse?' reverse':''}"><div><img src="${cover}" alt="${name}" class="album-cover"></div><div class="album-meta"><div class="album-badge">${i===0?'Debut Album':'Album'}</div><h2 class="album-title">${name}</h2><div class="album-artist">${ARTIST}</div><div class="stream-row">${str.spotify?`<a href="${str.spotify}" target="_blank" class="stream-btn">&#9654; Spotify</a>`:''}${str.apple?`<a href="${str.apple}" target="_blank" class="stream-btn">&#9834; Apple Music</a>`:''}${str.ytm?`<a href="${str.ytm}" target="_blank" class="stream-btn">&#9654; YT Music</a>`:''}</div><div class="tracklist">${tracks.map(t=>`<div class="track-row"><span class="track-num">${t.num||''}</span><span class="track-title">${t.title}</span><span>${t.isLatest?'<span class="track-badge badge-new">Latest</span>':''}</span><button class="track-play-btn" data-play-id="${t.id}" onclick="playById('${t.id}')">&#9654;</button></div>`).join('')}</div></div></div>`;
-    container.appendChild(sec);i++;
-  });
-}
-function buildSingles(songs){
-  document.getElementById('singles-grid').innerHTML=songs.map(s=>`<div class="single-card" onclick="playById('${s.id}')"><div class="single-img-wrap"><img src="${s.cover}" alt="${s.title}" loading="lazy"><div class="single-play-overlay"><button class="single-play-btn" data-play-id="${s.id}">&#9654;</button></div></div><div class="single-info"><div class="single-title">${s.title}</div><div class="single-sub">${s.album}${s.isLatest?' · Latest':''}</div>${makeStreamBtns(s.id)}</div></div>`).join('');
-}
-function updateLatest(song){
-  if(!song)return;
-  document.getElementById('latest-section-title').textContent=song.title;
-  document.getElementById('latest-title').textContent=song.title;
-  document.getElementById('latest-sub').textContent=`${ARTIST} · ${song.album||''}`;
-  const cv=document.getElementById('latest-cover');cv.src=song.cover||'';cv.alt=song.title;
-  const lb=document.getElementById('latest-play-btn');lb.onclick=()=>playById(song.id);lb.dataset.playId=song.id;
-  const hb=document.getElementById('hero-play-btn');hb.textContent=`▶  Play ${song.title}`;hb.onclick=()=>playById(song.id);
-}
-async function init(){
-  try{
-    const res=await fetch(`${SONGS_URL}?cb=${Date.now()}`);SONGS=await res.json();ORDER=SONGS.map(s=>s.id);
-    buildAlbums(SONGS);buildSingles(SONGS);
-    const latest=SONGS.find(s=>s.isLatest)||SONGS[SONGS.length-1];updateLatest(latest);
-    try{const lr=await fetch(`${LATEST_URL}?cb=${Date.now()}`);const ld=await lr.json();if(ld.title){const m=SONGS.find(s=>s.title===ld.title);if(m)updateLatest(m);}}catch(e){}
-  }catch(e){document.getElementById('albums-loading').textContent='Music unavailable.';}
-}
-init();
-window.addEventListener('scroll',()=>{document.getElementById('topnav').classList.toggle('scrolled',window.scrollY>60);});
-function openLyricModal(url){document.getElementById('lyric-modal').classList.add('open');document.getElementById('lyric-modal-iframe').src=url;}
-function closeLyricModal(){document.getElementById('lyric-modal').classList.remove('open');document.getElementById('lyric-modal-iframe').src='';}
-document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLyricModal();});
 </script>
+
 </body>
 </html>
