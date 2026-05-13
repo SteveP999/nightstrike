@@ -1,19 +1,30 @@
 {
   "artist": "NightStrike",
-  "latestUrl": "https://raw.githubusercontent.com/SteveP999/NightStrike/main/latest.json",
+  "latestUrl": "latest.json",
   "featuredTrack": {
-    "title": "Crash and Burn",
+    "title": "The Storm Never Sleeps",
     "artist": "NightStrike",
     "album": "High Voltage",
-    "cover": "https://raw.githubusercontent.com/SteveP999/NightStrike/main/covers/nightstrike-crash-and-burn-cover.png",
-    "audioSrc": "https://www.dropbox.com/scl/fi/pdk6fd86ja75lrfd862i9/nightstrike-crash-and-burn-mp3.mp3?rlkey=65gjedmk6v53dxnyhfwyjwc83&raw=1"
+    "cover": "https://raw.githubusercontent.com/SteveP999/NightStrike/main/images/covers/nightstrike-the-storm-never-sleeps-cover.png",
+    "audioSrc": "https://www.dropbox.com/scl/fi/xzj3myi8pt4ulsd2dvfrl/nightstrike-the-storm-never-sleeps-mp3.mp3?rlkey=e4vl08mxg5mb2m3m2yt4zvq3c&raw=1",
+    "videos": []
   },
   "tracks": [
     {
-      "title": "The Storm Never Sleeps",
+      "title": "Crash and Burn",
+      "artist": "NightStrike",
       "album": "High Voltage",
-      "cover": "https://raw.githubusercontent.com/SteveP999/NightStrike/main/covers/nightstrike-the-storm-never-sleeps-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/xzj3myi8pt4ulsd2dvfrl/nightstrike-the-storm-never-sleeps-mp3.mp3?rlkey=e4vl08mxg5mb2m3m2yt4zvq3c&raw=1"
+      "cover": "https://raw.githubusercontent.com/SteveP999/NightStrike/main/images/covers/nightstrike-crash-and-burn-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/pdk6fd86ja75lrfd862i9/nightstrike-crash-and-burn-mp3.mp3?rlkey=65gjedmk6v53dxnyhfwyjwc83&raw=1",
+      "videos": []
+    },
+    {
+      "title": "The Storm Never Sleeps",
+      "artist": "NightStrike",
+      "album": "High Voltage",
+      "cover": "https://raw.githubusercontent.com/SteveP999/NightStrike/main/images/covers/nightstrike-the-storm-never-sleeps-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/xzj3myi8pt4ulsd2dvfrl/nightstrike-the-storm-never-sleeps-mp3.mp3?rlkey=e4vl08mxg5mb2m3m2yt4zvq3c&raw=1",
+      "videos": []
     }
   ]
 }
