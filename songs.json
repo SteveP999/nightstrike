@@ -21,7 +21,8 @@
       "glam metal",
       "hard rock",
       "sleaze rock"
-    ]
+    ],
+    "streaming": {}
   },
   {
     "id": "nightstrike-the-storm-never-sleeps",
@@ -45,7 +46,8 @@
       "glam metal",
       "arena rock",
       "storm"
-    ]
+    ],
+    "streaming": {}
   },
   {
     "id": "nightstrike-while-the-city-sleeps",
@@ -65,6 +67,7 @@
     "includeOnRadio": true,
     "includeOnHomepage": true,
     "explicit": false,
-    "tags": []
+    "tags": [],
+    "streaming": {}
   }
 ]
