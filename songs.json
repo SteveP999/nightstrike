@@ -119,26 +119,5 @@
       "apple": "",
       "youtubeMusic": ""
     }
-  },
-  {
-    "id": "nightstrike-standing-on-the-edge-2",
-    "num": "06",
-    "title": "Standing on the Edge",
-    "artist": "NightStrike",
-    "album": "High Voltage",
-    "trackNumber": 6,
-    "albumOrder": 6,
-    "albumCover": "images/covers/nightstrike-high-voltage-ALBUM-cover.png",
-    "type": "single",
-    "isLatest": true,
-    "cover": "images/covers/nightstrike-standing-on-the-edge-cover.png",
-    "audio": "https://www.dropbox.com/scl/fi/jwyttensje1a6agoxmgq2/nightstrike-standing-on-the-edge-MP3-mastered.mp3?rlkey=610cja0b7pllugc2r74nnxoi8&raw=1",
-    "audioSrc": "https://www.dropbox.com/scl/fi/jwyttensje1a6agoxmgq2/nightstrike-standing-on-the-edge-MP3-mastered.mp3?rlkey=610cja0b7pllugc2r74nnxoi8&raw=1",
-    "videos": [],
-    "includeOnRadio": true,
-    "includeOnHomepage": true,
-    "explicit": false,
-    "tags": [],
-    "streaming": {}
   }
 ]
